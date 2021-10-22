@@ -1,6 +1,6 @@
 @Library('test-jenkins-shared-library') _
 
 codePipeline {
-    buildType: 'dotNetCore'
-    version: '3.1.0'
+    buildType = 'dotNetCore'
+    version = '3.1.0'
 }
