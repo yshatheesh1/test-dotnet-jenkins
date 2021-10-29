@@ -1,7 +1,7 @@
 @Library('test-jenkins-shared-library') _
 
 codePipeline {
-    image: 'mcr.microsoft.com/dotnet/core/aspnet:3.1'
+    image = 'mcr.microsoft.com/dotnet/core/aspnet:3.1'
 }
 // pipeline {
 //     agent any {
