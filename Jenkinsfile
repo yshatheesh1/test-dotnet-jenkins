@@ -2,6 +2,8 @@
 
 codePipeline {
     image = 'mcr.microsoft.com/dotnet/core/aspnet:3.1'
+    build = 'dotnet build'
+    test = 'dotnet test'
 }
 // pipeline {
 //     agent any {
