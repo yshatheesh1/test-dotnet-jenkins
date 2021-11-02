@@ -16,7 +16,7 @@ pipeline {
             steps {
                 gitCheckout(
                     type : 'GitSCM',
-                    url : 'https://github.com/yshatheesh1/Natures_css_project.git,
+                    url : 'https://github.com/yshatheesh1/Natures_css_project.git',
                     branchName : 'master')
                 }
             }
