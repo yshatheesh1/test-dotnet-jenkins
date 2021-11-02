@@ -17,8 +17,7 @@ pipeline {
                 gitCheckout(
                     type : 'GitSCM',
                     url : 'https://github.com/yshatheesh1/test-dotnet-jenkins.git',
-                    branchName : 'develop',
-                    credentialId : 'testCrendentailId')
+                    branchName : 'main')
                 }
             }
         }
