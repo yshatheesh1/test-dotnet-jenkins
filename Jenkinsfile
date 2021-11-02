@@ -11,7 +11,7 @@
 
 pipeline {
     agent any 
-    // stages {
+    stages {
         stage('checkout') {
             gitCheckout {
                 type = 'GitSCM'
@@ -20,7 +20,7 @@ pipeline {
                 credentialId = 'testCrendentailId'
             }
         }
-    // }
+    }
 }
 // pipeline {
 //     agent any {
