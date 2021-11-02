@@ -15,7 +15,7 @@ pipeline {
         stage('checkout') {
              steps {
                 gitCheckout {
-                    scm 'GitSCM'
+                    type 'GitSCM'
                     url 'https://github.com/yshatheesh1/test-dotnet-jenkins.git'
                     branchName 'develop'
                     credentialId 'testCrendentailId'
