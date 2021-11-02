@@ -1,9 +1,26 @@
 @Library('test-jenkins-shared-library') _
 
-codePipeline {
-    image = 'mcr.microsoft.com/dotnet/core/aspnet:3.1'
-    build = 'dotnet build'
-    test = 'dotnet test'
+// codePipeline {
+//     image = 'mcr.microsoft.com/dotnet/core/aspnet:3.1'
+//     build = 'dotnet build'
+//     test = 'dotnet test'
+//     gitRepo {
+
+//     }
+// }
+
+pipeline {
+    agent any 
+    stages {
+        stage('checkout') {
+            gitCheckout {
+                scm 'GitSCM'
+                url 'https://github.com/yshatheesh1/test-dotnet-jenkins.git'
+                branchName 'develop'
+                credentialId 'testCrendentailId'
+            }
+        }
+    }
 }
 // pipeline {
 //     agent any {
