@@ -13,11 +13,13 @@ pipeline {
     agent any 
     stages {
         stage('checkout') {
-            gitCheckout {
-                scm 'GitSCM'
-                url 'https://github.com/yshatheesh1/test-dotnet-jenkins.git'
-                branchName 'develop'
-                credentialId 'testCrendentailId'
+             steps {
+                gitCheckout {
+                    scm 'GitSCM'
+                    url 'https://github.com/yshatheesh1/test-dotnet-jenkins.git'
+                    branchName 'develop'
+                    credentialId 'testCrendentailId'
+                }
             }
         }
     }
