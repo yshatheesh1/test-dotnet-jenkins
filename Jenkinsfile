@@ -23,7 +23,7 @@ pipeline {
             }
         }
     }
-}
+// }
 // pipeline {
 //     agent any {
 //         stage('setup') {
