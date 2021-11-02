@@ -1,27 +1,24 @@
 @Library('test-jenkins-shared-library') _
 
-// codePipeline {
-//     image = 'mcr.microsoft.com/dotnet/core/aspnet:3.1'
-//     build = 'dotnet build'
-//     test = 'dotnet test'
-//     gitRepo = {
+codePipeline {
+    image = 'mcr.microsoft.com/dotnet/core/aspnet:3.1'
+    build = 'dotnet build'
+    test = 'dotnet test'
+}
 
+// pipeline {
+//     agent any 
+//     stages {
+//         stage('checkout') {
+//             steps {
+//                 gitCheckout(
+//                     type : 'GitSCM',
+//                     url : 'https://github.com/yshatheesh1/Natures_css_project.git',
+//                     branchName : 'master')
+//                 }
+//             }
+//         }
 //     }
-// }
-
-pipeline {
-    agent any 
-    stages {
-        stage('checkout') {
-            steps {
-                gitCheckout(
-                    type : 'GitSCM',
-                    url : 'https://github.com/yshatheesh1/Natures_css_project.git',
-                    branchName : 'master')
-                }
-            }
-        }
-    }
 // }
 // pipeline {
 //     agent any {
