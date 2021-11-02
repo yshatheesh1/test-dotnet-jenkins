@@ -16,8 +16,8 @@ pipeline {
             steps {
                 gitCheckout(
                     type : 'GitSCM',
-                    url : 'https://github.com/yshatheesh1/test-dotnet-jenkins.git',
-                    branchName : 'main')
+                    url : 'https://github.com/yshatheesh1/Natures_css_project.git,
+                    branchName : 'master')
                 }
             }
         }
